@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Layout extends StatelessWidget {
-  const Layout({required this.children, super.key});
+  const Layout({required this.child, super.key});
 
-  final List<Widget> children;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          padding: EdgeInsets.only(top: 64),
+          height: double.infinity,
+          padding: EdgeInsets.fromLTRB(16, 64, 16, 0),
           constraints: const BoxConstraints.expand(),
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -22,7 +23,7 @@ class Layout extends StatelessWidget {
               ],
             ),
           ),
-          child: SingleChildScrollView(child: Column(children: [...children])),
+          child: SingleChildScrollView(child: Column(children: [child])),
         ),
       ),
     );

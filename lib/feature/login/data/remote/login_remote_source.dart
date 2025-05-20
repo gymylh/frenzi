@@ -33,7 +33,6 @@ class LoginRemoteSource {
       Map<String, dynamic> jsonBody = json.decode(response);
 
       final result = UserModel.fromJson(jsonBody);
-      print(result);
       return result;
     } on DioException catch (_) {
       rethrow;

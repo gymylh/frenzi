@@ -12,6 +12,6 @@ class LoginScreen extends StatelessWidget {
     BlocProvider.of<LoginViewModel>(
       context,
     ).add(UserLoginRequested(username: '', password: ''));
-    return Layout(children: [Text('tete')]);
+    return Layout(child: Text('tete'));
   }
 }
