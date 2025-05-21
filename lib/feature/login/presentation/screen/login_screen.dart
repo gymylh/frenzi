@@ -104,31 +104,44 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           SizedBox(height: 30),
                           Center(
-                            child: CustomButton(
-                              onPressed: () {
-                                if (isEmailValid && isPasswordValid) {
-                                  BlocProvider.of<LoginViewModel>(context).add(
-                                    UserLoginRequested(
-                                      email: emailTextController.text,
-                                      password: passwordTextController.text,
-                                    ),
+                            child: BlocBuilder<LoginViewModel, LoginState>(
+                              builder: (context, state) {
+                                if (state.loginStatus ==
+                                    ViewModelStatus.loading) {
+                                  return CircularProgressIndicator(
+                                    color: primaryColor,
                                   );
                                 }
+                                return CustomButton(
+                                  onPressed: () {
+                                    if (isEmailValid && isPasswordValid) {
+                                      BlocProvider.of<LoginViewModel>(
+                                        context,
+                                      ).add(
+                                        UserLoginRequested(
+                                          email: emailTextController.text,
+                                          password: passwordTextController.text,
+                                        ),
+                                      );
+                                    }
+                                  },
+                                  isDeactivated:
+                                      !(isEmailValid && isPasswordValid),
+                                  height: null,
+                                  width: 50.w,
+                                  color: primaryColor,
+                                  children: [
+                                    Text(
+                                      'LOGIN',
+                                      style: TextStyle(
+                                        color: textWhite,
+                                        fontSize: 16.sp,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                );
                               },
-                              isDeactivated: !(isEmailValid && isPasswordValid),
-                              height: null,
-                              width: 50.w,
-                              color: primaryColor,
-                              children: [
-                                Text(
-                                  'LOGIN',
-                                  style: TextStyle(
-                                    color: textWhite,
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
                             ),
                           ),
                           SizedBox(height: 30),

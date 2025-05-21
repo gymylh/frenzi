@@ -5,12 +5,12 @@ import 'package:frenzi/feature/trips/data/model/trip_model.dart';
 class TripsState extends Equatable {
   const TripsState({
     this.previousTripsStatus = ViewModelStatus.initial,
-    this.previousTripsData,
+    this.previousTripsData = const [],
     this.previousTripsError,
   });
 
   final ViewModelStatus previousTripsStatus;
-  final List<TripModel>? previousTripsData;
+  final List<TripModel> previousTripsData;
   final Exception? previousTripsError;
 
   TripsState copyWith({
