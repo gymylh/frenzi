@@ -17,10 +17,7 @@ class LoginViewModel extends Bloc<LoginEvent, LoginState> {
   ) async {
     emit(state.copyWith(loginStatus: ViewModelStatus.loading));
     try {
-      final result = await _loginRepository.login(
-        event.username,
-        event.password,
-      );
+      final result = await _loginRepository.login(event.email, event.password);
       emit(
         state.copyWith(loginStatus: ViewModelStatus.success, loginData: result),
       );

@@ -8,7 +8,7 @@ class LoginRepositoryImpl extends LoginRepository {
   final LoginRemoteSource _remoteSource;
 
   @override
-  Future<UserModel> login(String userName, String password) {
-    return _remoteSource.login(userName, password);
+  Future<UserModel> login(String email, String password) {
+    return _remoteSource.login(email, password);
   }
 }

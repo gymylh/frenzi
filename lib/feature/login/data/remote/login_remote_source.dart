@@ -12,7 +12,7 @@ class LoginRemoteSource {
 
   http.Client client = http.Client();
 
-  Future<UserModel> login(String username, String password) async {
+  Future<UserModel> login(String email, String password) async {
     try {
       // final response = await _httpClient.post<Map<String, dynamic>>(
       //   'api/login',
@@ -29,7 +29,9 @@ class LoginRemoteSource {
       //   return const UserModel.empty();
       // }
 
-      String response = await rootBundle.loadString('assets/sample_json/user_response.json');
+      String response = await rootBundle.loadString(
+        'assets/sample_json/user_response.json',
+      );
       Map<String, dynamic> jsonBody = json.decode(response);
 
       final result = UserModel.fromJson(jsonBody);

@@ -11,7 +11,8 @@ const textBlack = Color(0xFF3B3636);
 const textWhite = Color(0xFFFFFFFF);
 
 const inputBorderColor = Color(0xFFE8E8E8);
-const inputPlaceholderColor = Color(0xFFB2B2B2);
+const inputPlaceholderColor = Color(0xFFBEBEC2);
+const inputBackgroundColor = Color(0xFFF2F2F7);
 
 //Measures
 const backgroundPadding = 24.0;

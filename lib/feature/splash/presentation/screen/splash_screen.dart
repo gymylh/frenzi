@@ -1,12 +1,9 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frenzi/common/component/button/custom_button.dart';
 import 'package:frenzi/common/component/layout/layout.dart';
 import 'package:frenzi/common/route/location/location.dart';
 import 'package:frenzi/common/theme/theme.dart';
-import 'package:frenzi/feature/login/presentation/event/login_event.dart';
-import 'package:frenzi/feature/login/presentation/view_model/login_view_model.dart';
 import 'package:sizer/sizer.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -14,9 +11,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    BlocProvider.of<LoginViewModel>(
-      context,
-    ).add(UserLoginRequested(username: '', password: ''));
     return Layout(
       child: SizedBox(
         width: 100.w,
@@ -40,7 +34,7 @@ class SplashScreen extends StatelessWidget {
                   style: TextStyle(
                     color: textWhite,
                     fontSize: 16.sp,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ],

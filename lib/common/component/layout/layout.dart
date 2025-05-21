@@ -23,7 +23,7 @@ class Layout extends StatelessWidget {
               ],
             ),
           ),
-          child: SingleChildScrollView(child: Column(children: [child])),
+          child: child,
         ),
       ),
     );

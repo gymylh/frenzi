@@ -43,6 +43,7 @@ dependencies:
   flutter_hooks: ^0.21.2
   bloc: ^9.0.0
   sizer: ^3.0.5
+  email_validator: ^3.0.0
 
 dev_dependencies:
   flutter_test:

@@ -37,6 +37,9 @@ class MyApp extends HookWidget {
               themeMode: ThemeMode.light,
               routeInformationParser: BeamerParser(),
               routerDelegate: routerDelegate,
+              backButtonDispatcher: BeamerBackButtonDispatcher(
+                delegate: routerDelegate,
+              ),
             );
           },
         ),
