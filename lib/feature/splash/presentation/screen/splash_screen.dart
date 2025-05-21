@@ -22,7 +22,7 @@ class SplashScreen extends StatelessWidget {
             Text('Frenzi', style: TextStyle(color: textWhite, fontSize: 28.sp)),
             CustomButton(
               onPressed: () {
-                context.beamToNamed(TripsLocation.route);
+                context.beamToNamed(LoginLocation.route);
               },
               isDeactivated: false,
               height: null,

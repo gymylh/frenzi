@@ -1,9 +1,9 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:frenzi/common/helper/string_helper.dart';
 import 'package:frenzi/common/route/location/detailed_trip_location.dart';
 import 'package:frenzi/common/theme/theme.dart';
 import 'package:frenzi/feature/trips/data/model/trip_model.dart';
-import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
 
 class TripItem extends StatelessWidget {
@@ -13,11 +13,6 @@ class TripItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String formatDateTime(String dateString) {
-      DateTime tempDate = DateFormat("yyyy-MM-dd hh:mm:ss").parse(dateString);
-      return DateFormat("dd MMMM yyyy").format(tempDate);
-    }
-
     return Padding(
       padding: const EdgeInsets.only(bottom: 15),
       child: GestureDetector(
@@ -71,7 +66,7 @@ class TripItem extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  formatDateTime(tripModel.date),
+                  tripModel.date.formatDateTime(),
                   style: TextStyle(
                     color: textWhite,
                     fontSize: 14.sp,
