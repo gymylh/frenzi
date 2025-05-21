@@ -1,0 +1,182 @@
+[
+  {
+    "pickup": "Kyaikto",
+    "destination": "Jianba",
+    "date": "2024-06-22 04:14:56",
+    "numberOfPassengers": 3,
+    "fare": 24.99,
+    "latitude": 17.3124678,
+    "longitude": 97.0149006
+  },
+  {
+    "pickup": "Gaofeng",
+    "destination": "Cibolek Kidul",
+    "date": "2025-01-19 12:01:07",
+    "numberOfPassengers": 4,
+    "fare": 34.99,
+    "latitude": 29.432849,
+    "longitude": 110.923502
+  },
+  {
+    "pickup": "Paso de los Libres",
+    "destination": "Xiaoshan",
+    "date": "2024-11-12 22:38:13",
+    "numberOfPassengers": 4,
+    "fare": 3.49,
+    "latitude": -29.7137627,
+    "longitude": -57.0864221
+  },
+  {
+    "pickup": "Edinburgh",
+    "destination": "Sar Chakān",
+    "date": "2025-05-10 09:13:36",
+    "numberOfPassengers": 1,
+    "fare": 34.99,
+    "latitude": 55.9309486,
+    "longitude": -3.1859102
+  },
+  {
+    "pickup": "Guitang",
+    "destination": "Akim Swedru",
+    "date": "2024-10-19 15:51:36",
+    "numberOfPassengers": 4,
+    "fare": 19.99,
+    "latitude": 26.647661,
+    "longitude": 106.630153
+  },
+  {
+    "pickup": "Kaducondong",
+    "destination": "Geneng",
+    "date": "2024-09-16 06:49:00",
+    "numberOfPassengers": 4,
+    "fare": 7.99,
+    "latitude": -6.3472,
+    "longitude": 105.855
+  },
+  {
+    "pickup": "Jagupit",
+    "destination": "Marco",
+    "date": "2024-11-14 02:31:13",
+    "numberOfPassengers": 3,
+    "fare": 24.99,
+    "latitude": 9.2422286,
+    "longitude": 125.5562747
+  },
+  {
+    "pickup": "Miaotang",
+    "destination": "Boé",
+    "date": "2025-02-26 01:04:05",
+    "numberOfPassengers": 3,
+    "fare": 3.29,
+    "latitude": 28.579409,
+    "longitude": 110.090436
+  },
+  {
+    "pickup": "Kainan",
+    "destination": "Saguing",
+    "date": "2025-01-05 13:05:53",
+    "numberOfPassengers": 1,
+    "fare": 24.99,
+    "latitude": 34.2398892,
+    "longitude": 135.2395881
+  },
+  {
+    "pickup": "Jijiga",
+    "destination": "Binitayan",
+    "date": "2024-12-07 21:33:19",
+    "numberOfPassengers": 1,
+    "fare": 19.99,
+    "latitude": 9.3567838,
+    "longitude": 42.7955185
+  },
+  {
+    "pickup": "Changxingbao",
+    "destination": "Straldzha",
+    "date": "2024-11-07 13:24:36",
+    "numberOfPassengers": 4,
+    "fare": 89.99,
+    "latitude": 28.30993,
+    "longitude": 109.202036
+  },
+  {
+    "pickup": "Harian",
+    "destination": "Bandeirantes",
+    "date": "2025-04-05 08:29:12",
+    "numberOfPassengers": 2,
+    "fare": 4.99,
+    "latitude": 2.5307213,
+    "longitude": 98.5940814
+  },
+  {
+    "pickup": "Shcherbinka",
+    "destination": "Tolstoy-Yurt",
+    "date": "2025-01-31 23:35:38",
+    "numberOfPassengers": 2,
+    "fare": 7.99,
+    "latitude": 55.536259,
+    "longitude": 37.5985159
+  },
+  {
+    "pickup": "Tripoli",
+    "destination": "Aranyaprathet",
+    "date": "2024-11-18 21:44:00",
+    "numberOfPassengers": 4,
+    "fare": 29.99,
+    "latitude": 34.4345947,
+    "longitude": 35.8361633
+  },
+  {
+    "pickup": "Langjun",
+    "destination": "Miaogou",
+    "date": "2024-07-14 12:36:39",
+    "numberOfPassengers": 2,
+    "fare": 15.99,
+    "latitude": 37.469452,
+    "longitude": 121.375226
+  },
+  {
+    "pickup": "San Andrés",
+    "destination": "Merkezköy",
+    "date": "2024-07-03 13:49:22",
+    "numberOfPassengers": 1,
+    "fare": 5.99,
+    "latitude": 16.9633521,
+    "longitude": -89.9262925
+  },
+  {
+    "pickup": "Pshekhskaya",
+    "destination": "Xinchong",
+    "date": "2024-05-09 04:48:33",
+    "numberOfPassengers": 3,
+    "fare": 39.99,
+    "latitude": 44.6962724,
+    "longitude": 39.8024873
+  },
+  {
+    "pickup": "Norabats’",
+    "destination": "Retiro",
+    "date": "2025-05-18 10:34:22",
+    "numberOfPassengers": 3,
+    "fare": 29.99,
+    "latitude": 40.1068238,
+    "longitude": 44.4322092
+  },
+  {
+    "pickup": "Marsaxlokk",
+    "destination": "Doudleby nad Orlicí",
+    "date": "2024-11-08 07:07:01",
+    "numberOfPassengers": 4,
+    "fare": 79.99,
+    "latitude": 35.8413934,
+    "longitude": 14.5466374
+  },
+  {
+    "pickup": "Bačka Topola",
+    "destination": "Dobre",
+    "date": "2024-07-05 15:24:13",
+    "numberOfPassengers": 3,
+    "fare": 12.99,
+    "latitude": 45.8144238,
+    "longitude": 19.6379551
+  }
+]

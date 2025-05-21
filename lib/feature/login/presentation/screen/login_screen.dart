@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:frenzi/common/component/button/custom_button.dart';
 import 'package:frenzi/common/component/layout/layout.dart';
+import 'package:frenzi/common/component/text/page_title.dart';
 import 'package:frenzi/common/enum/view_model_status_enum.dart';
 import 'package:frenzi/common/route/location/location.dart';
 import 'package:frenzi/common/theme/theme.dart';
@@ -71,14 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Text(
-                    'Login',
-                    style: TextStyle(
-                      color: textWhite,
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  PageTitle(title: 'Login'),
                   Padding(
                     padding: const EdgeInsets.only(top: 20),
                     child: Container(

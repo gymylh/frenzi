@@ -11,7 +11,7 @@ class Layout extends StatelessWidget {
       home: Scaffold(
         body: Container(
           height: double.infinity,
-          padding: EdgeInsets.fromLTRB(16, 64, 16, 0),
+          padding: EdgeInsets.fromLTRB(30, 0, 30, 0),
           constraints: const BoxConstraints.expand(),
           decoration: BoxDecoration(
             gradient: LinearGradient(

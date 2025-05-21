@@ -7,6 +7,8 @@ import 'package:frenzi/common/route/location_builder/module_location_builder.dar
 import 'package:frenzi/common/theme/theme.dart';
 import 'package:frenzi/feature/login/data/di/login_repository_di.dart';
 import 'package:frenzi/feature/login/presentation/view_model/login_view_model.dart';
+import 'package:frenzi/feature/trips/data/di/trips_repository_di.dart';
+import 'package:frenzi/feature/trips/presentation/view_model/trips_view_model.dart';
 import 'package:sizer/sizer.dart';
 
 final GlobalKey globalKey = GlobalKey();
@@ -26,6 +28,7 @@ class MyApp extends HookWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => LoginViewModel(loginRepositoryDI)),
+        BlocProvider(create: (context) => TripsViewModel(tripsRepositoryDI)),
       ],
       child: BeamerProvider(
         key: globalKey,
